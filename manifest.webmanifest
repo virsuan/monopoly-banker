@@ -1,0 +1,16 @@
+{
+  "name": "Банкир Монополии",
+  "short_name": "Банкир",
+  "description": "Помощник для настольной Монополии: деньги, улицы и рента",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#1e5b43",
+  "theme_color": "#1e5b43",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

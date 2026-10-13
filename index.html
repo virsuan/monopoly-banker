@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#1e5b43">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Банкир Монополии</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <h1>Банкир <span>Монополии</span></h1>
+    <button class="icon-btn" id="btn-undo" aria-label="Отменить последнее действие"><span class="ico">↩️</span>Отменить</button>
+    <button class="icon-btn" id="btn-sound" aria-pressed="true" aria-label="Звук"><span class="ico">🔊</span></button>
+    <button class="icon-btn" id="btn-voice" aria-pressed="true" aria-label="Голос"><span class="ico">🗣️</span></button>
+    <button class="icon-btn" id="btn-new" aria-label="Новая игра"><span class="ico">🎲</span>Новая игра</button>
+  </header>
+  <section id="players" aria-label="Игроки"></section>
+  <div class="board-wrap"><div class="board" id="board"></div></div>
+</div>
+<div id="setup" hidden></div>
+<div id="sheet-backdrop" hidden></div>
+<div id="toast" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="tokens.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
